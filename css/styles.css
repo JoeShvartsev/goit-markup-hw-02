@@ -1,8 +1,226 @@
-параграфи  #434455
-заголовки #2E2F42
-синий #4D5AE5
-
-
-body {
-    font-family: Roboto, sans-serif;
+/* global */
+:root {
+    --text--: #434455; 
+    --dark--: #2E2F42;
+    --modal-ovarlay--: rgba(46,47,66,40);
+    --subtle-text--:#8E8F99;  
+    --white--: #FFFFFF;
+    --primary-brand--: #4D5AE5;
+    --pressed-state--:#404BBF;
+    --success--:#31D0AA;
+    --accent--:#E7E9FC;
+    --light--:#F4F4FD;
 }
+body {
+    font-family: "Roboto", "sans-serif";
+    color:var(--text--);
+    background-color: var(--white--);
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: var(--dark--) ;
+}
+
+
+/* pressed state for interactive elements */
+.order-btn:hover, 
+.order-btn:focus {
+    background-color: var(--pressed-state--);
+}
+.adress-link:hover,
+.adress-link:focus,
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--pressed-state--);
+}
+.radiobutton:hover,
+.radiobutton:focus {
+    background-color: var(--pressed-state--);
+    color: var(--white--);
+    border-color: var(--primary-brand--)
+}
+
+
+/* hidden elements */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+/* Header styles */
+.logo {
+    font-family:"Raleway";
+    font-weight: 800;
+    color: var(--dark--);
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.logo-web {
+    color: var(--primary-brand--);
+}
+.nav-link {
+    font-weight: 500;
+    color: var(--dark--); 
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.adress-link {
+    color: var(--text--);
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.nav-link, .adress-link,
+.nav-item, 
+.adress-item, .logo {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* footer styles */
+.footer { 
+    background: var(--dark--);
+}
+.footer > .logo {
+    font-family: "Raleway";
+    font-weight: 800;
+    color: var(--light--);
+    font-size: 18px;
+    line-height: 1.16; 
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.main-paragraph {
+    color: var(--accent--);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
+/* hero section main page*/
+.hero-section {
+    background:var(--dark--);
+}
+.slogan {
+    font-weight: 700;
+    color: var(--white--);
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+.order-btn {
+    font-weight: 500;
+    background: var(--primary-brand--);
+    border-color: var(--primary-brand--);
+    color: var(--white--);
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+
+
+/* features section */
+.features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.8;
+    letter-spacing: 0.02em;
+}
+.features-desc {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.features-item {
+    list-style-type: none;
+}
+
+
+/* section services style */
+.service-title {
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+}
+.service-list {
+    list-style-type: none;
+}
+
+
+/* section "team" */
+.team-title {
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+}
+.team-list {
+    list-style-type: none;
+}
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+}
+.work-position {
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+.team {
+    background-color: var(--accent--);
+}
+
+
+/* portfolio styles */
+
+.button-list, .portfolio-list {
+    list-style-type: none;
+}
+.portfolio-link {
+    text-decoration: none;
+}
+.radiobutton {
+    font-weight: 500; 
+    background-color: var(--accent--);
+    color: var(--primary-brand--);
+    border-color: var(--accent--);
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    cursor: pointer;
+}   
+.portfolio-subtitle {
+    font-weight: 500;
+    color: var(--dark--);
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.portfolio-desc {
+    color: var(--text--);
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+.portfolio-description {
+    color: var(--text--);
+    letter-spacing: 0.02em;
+    line-height: 1.5; 
+}
+

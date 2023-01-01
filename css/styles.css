@@ -122,6 +122,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 .order-btn {
+    font-family: inherit ;
     font-weight: 500;
     background: var(--primary-brand--);
     border-color: var(--primary-brand--);
@@ -137,7 +138,7 @@ h1,h2,h3,h4,h5,h6 {
 .features-subtitle {
     font-weight: 500;
     font-size: 20px;
-    line-height: 0.8;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 .features-desc {
@@ -198,6 +199,7 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
 }
 .radiobutton {
+    font-family: inherit;
     font-weight: 500; 
     background-color: var(--accent--);
     color: var(--primary-brand--);
